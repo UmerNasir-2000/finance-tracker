@@ -1,6 +1,5 @@
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return (
-    <h2>Poppins</h2>
-  );
+  return <Button variant="green">Click Me!</Button>;
 }

@@ -1,8 +1,8 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import { PropsWithChildren } from "react";
-import { ClerkProvider, SignOutButton } from "@clerk/nextjs";
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,9 +19,6 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
     <ClerkProvider>
       <html lang="en">
         <body className={poppins.className}>
-          <header>
-            <SignOutButton />
-          </header>
           <main>{children}</main>
         </body>
       </html>

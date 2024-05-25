@@ -8,7 +8,9 @@ export default function Page() {
         <LoaderCircle className="animate-spin" />
       </ClerkLoading>
       <ClerkLoaded>
-        <SignIn />
+        <div className="min-h-screen flex justify-center items-center">
+          <SignIn />
+        </div>
       </ClerkLoaded>
     </>
   );

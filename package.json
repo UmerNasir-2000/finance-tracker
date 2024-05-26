@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:migrate": "bun scripts/migrate.ts",
+    "db:generate": "bun drizzle-kit generate",
+    "db:studio": ""
   },
   "dependencies": {
     "@clerk/backend": "^1.2.1",

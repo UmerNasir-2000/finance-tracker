@@ -8,6 +8,13 @@
       "when": 1716708894787,
       "tag": "0000_romantic_toxin",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1716709870755,
+      "tag": "0001_careful_killmonger",
+      "breakpoints": true
     }
   ]
 }
